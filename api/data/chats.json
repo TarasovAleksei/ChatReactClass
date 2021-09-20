@@ -1,0 +1,69 @@
+[
+  {
+    "chatId": "1",
+    "chatName": "new chat",
+    "messages": [
+      {
+        "id": 1,
+        "author": "me",
+        "text": "hello"
+      },
+      {
+        "id": 3,
+        "author": "me",
+        "text": "how are u?"
+      },
+      {
+        "id": 4,
+        "author": "bot",
+        "text": "Я робот"
+      },
+      {
+        "id": 5,
+        "author": "me",
+        "text": "yo"
+      },
+      {
+        "id": 6,
+        "author": "bot",
+        "text": "Я робот"
+      }
+    ]
+  },
+  {
+    "chatId": "2",
+    "chatName": "new chat2",
+    "messages": [
+      {
+        "id": 1,
+        "author": "me",
+        "text": "first message"
+      },
+      {
+        "id": 2,
+        "author": "bot",
+        "text": "Я робот"
+      },
+      {
+        "id": 3,
+        "author": "me",
+        "text": "second message"
+      },
+      {
+        "id": 4,
+        "author": "bot",
+        "text": "Я робот"
+      },
+      {
+        "id": 5,
+        "author": "me",
+        "text": "third message"
+      },
+      {
+        "id": 6,
+        "author": "bot",
+        "text": "Я робот"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+.container {
+  max-width: 1140px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  background-color: lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.header {
+  grid-column: -1 / 1;
+}

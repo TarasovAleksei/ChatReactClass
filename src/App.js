@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Switch } from 'react-router';
+import style from './App.module.scss';
+import HeaderContainer from './Components/Header/HeaderContainer';
+import ChatListContainer from './Components/ChatList/ChatListContainer';
+import EmptyChatContainer from './Components/EmptyChat/EmptyChatContainer';
+import MessageFieldContainer from './Components/MessageField/MessageFieldContainer';
+import ProfileContainer from './Components/Profile/ProfileContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className={style.container}>
+        <HeaderContainer />
+        <ChatListContainer />
+        <Switch>
+          <Route exact path='/' component={EmptyChatContainer} />
+          <Route exact path='/profile' component={ProfileContainer} />
+          <Route exact path='/chat/:chatId' component={MessageFieldContainer} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
